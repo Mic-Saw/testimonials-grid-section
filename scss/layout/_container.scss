@@ -1,0 +1,66 @@
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:relative;
+    padding: 2.6rem 3.2rem 3.2rem 3.2rem;
+    border-radius: .8rem;
+    box-shadow: 4rem 6rem 5rem -4.7rem rgba(72, 85, 106, 0.247378);
+
+    &__quote {
+        position:absolute;
+        top:0;
+        right:8rem;
+
+        @media(max-width:912px) {
+            right:2.4rem;
+        }
+    }
+
+    &__person {
+        display:flex;
+        margin-bottom: 1.8rem;
+
+        &--image {
+            box-sizing: content-box;
+            width:2.8rem;
+            height:2.8rem;
+            margin-right: 1.7rem;
+            border-radius: 50%;
+
+            img {
+                width:100%;
+                border-radius: 50%;
+            }
+        }
+
+        &--name {
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 1.3rem;
+
+            span {
+                display: block;
+                margin-top: .4rem;
+                font-size: 1.1rem;
+                line-height: 1.1rem;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__header {
+        z-index: 1;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 2.4rem;
+    }
+
+    &__description {
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        opacity: 0.7;
+    }
+}
+
